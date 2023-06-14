@@ -1,20 +1,30 @@
 <template>
   <div>
-    <h1>Learning Vue.js v2</h1>
-    <TComponent title="Home title" name="Jh" />
+    <h1>This is Home page</h1>
+    <form>
+      <InputField v-model="name" />
+      <br />
+      <button>Submit</button>
+    </form>
+    {{ name }}
   </div>
 </template>
 
 <script>
-import TComponent from "@/components/TComponent.vue";
+import InputField from "@/components/InputField.vue";
 export default {
   data() {
     return {
-      name: "Junho",
+      name: "",
     };
   },
   components: {
-    TComponent,
+    InputField,
+  },
+  methods: {
+    updateName(name) {
+      this.name = name;
+    },
   },
 };
 </script>
