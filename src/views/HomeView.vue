@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>Learning Vue.js v2</h1>
-    <change-btn></change-btn>
+    <TComponent title="Home title" name="Jh" />
   </div>
 </template>
 
 <script>
-import ChangeBtn from "@/components/ChangeBtn.vue";
+import TComponent from "@/components/TComponent.vue";
 export default {
   data() {
     return {
@@ -14,7 +14,7 @@ export default {
     };
   },
   components: {
-    ChangeBtn,
+    TComponent,
   },
 };
 </script>
@@ -25,5 +25,3 @@ h1 {
   font-size: 3rem;
 }
 </style>
-
-ChangeBtn

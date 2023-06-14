@@ -1,15 +1,15 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <ChangeBtn />
+    <TComponent />
   </div>
 </template>
 
 <script>
-import ChangeBtn from "@/components/ChangeBtn.vue";
+import TComponent from "@/components/TComponent.vue";
 export default {
   components: {
-    ChangeBtn,
+    TComponent,
   },
 };
 </script>
