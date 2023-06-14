@@ -21,11 +21,6 @@ export default {
   components: {
     InputField,
   },
-  methods: {
-    updateName(name) {
-      this.name = name;
-    },
-  },
 };
 </script>
 

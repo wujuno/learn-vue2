@@ -1,7 +1,9 @@
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <small>{{ name }}</small>
+    <slot name="header" :junho="junho"></slot>
+    <h1>body</h1>
+    <slot></slot>
     <p>{{ msg }}</p>
     <button @click="updateMsg">Click here</button>
   </div>
@@ -21,6 +23,7 @@ export default {
   data() {
     return {
       msg: "Ready to Learning?",
+      junho: "coder",
     };
   },
   methods: {
