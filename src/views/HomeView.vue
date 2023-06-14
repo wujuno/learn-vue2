@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Learning Vue.js v2</h1>
+    <change-btn></change-btn>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import ChangeBtn from "@/components/ChangeBtn.vue";
 export default {
-  name: 'HomeView',
+  data() {
+    return {
+      name: "Junho",
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    ChangeBtn,
+  },
+};
 </script>
+
+<style scoped>
+h1 {
+  color: tomato;
+  font-size: 3rem;
+}
+</style>
+
+ChangeBtn
